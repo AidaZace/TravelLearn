@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ✈️ TravelLearn — Vibrant World Palette -->
+
+    <!-- Primary: Deep Teal/Cyan -->
+    <color name="primary_deep">#0A3D62</color>
+    <color name="primary_main">#1A7A8A</color>
+    <color name="primary_light">#2EC4B6</color>
+    <color name="primary_pale">#CBFAF6</color>
+    <color name="primary_surface">#F0FDFC</color>
+
+    <!-- Accent colors -->
+    <color name="accent_orange">#FF6B35</color>
+    <color name="accent_yellow">#FFD166</color>
+    <color name="accent_pink">#EF476F</color>
+    <color name="accent_green">#06D6A0</color>
+    <color name="accent_purple">#7B2D8B</color>
+
+    <!-- Button hover/pressed states -->
+    <color name="btn_primary_pressed">#15606D</color>
+    <color name="btn_secondary_pressed">#E8F8F7</color>
+    <color name="btn_orange_pressed">#E55A28</color>
+
+    <!-- Text -->
+    <color name="text_primary">#0A1628</color>
+    <color name="text_secondary">#4A6880</color>
+    <color name="text_hint">#90ADC4</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_on_orange">#FFFFFF</color>
+
+    <!-- Feedback -->
+    <color name="correct_green">#06D6A0</color>
+    <color name="correct_green_dark">#04B084</color>
+    <color name="wrong_red">#EF476F</color>
+    <color name="wrong_red_dark">#C73059</color>
+
+    <!-- Gradients (used in code) -->
+    <color name="grad_start">#0A3D62</color>
+    <color name="grad_end">#1A7A8A</color>
+
+    <!-- Misc -->
+    <color name="card_bg">#FFFFFF</color>
+    <color name="surface_bg">#F0FDFC</color>
+    <color name="divider">#D0EEF0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Aliases for activity_leaderboard.xml and activity_country_detail.xml (not yet redesigned) -->
+    <color name="indigo_surface">#F0FDFC</color>
+    <color name="indigo_deep">#0A3D62</color>
+    <color name="indigo_light">#2EC4B6</color>
+    <color name="indigo_primary">#1A7A8A</color>
+    <color name="indigo_pale">#CBFAF6</color>
+    <color name="indigo_medium">#2EC4B6</color>
+    <color name="accent_gold">#FFD166</color>
+    <color name="accent_coral">#EF476F</color>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FBFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#1B4F72"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter your name"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="18dp" />
+
+        <CheckBox
+            android:id="@+id/checkSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable sound / voice"
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="25dp" />
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Save Settings"
+            android:textSize="16sp"
+            android:layout_marginBottom="14dp" />
+
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Back to Home"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

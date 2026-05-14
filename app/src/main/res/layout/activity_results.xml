@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header with back button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/primary_deep"
+            android:paddingLeft="12dp"
+            android:paddingRight="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@color/text_white"
+                android:contentDescription="Back" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎉  Quiz Complete!"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_white"
+                    android:fontFamily="sans-serif-black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Here's how you did"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Orange accent line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/accent_orange" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Score card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardBackgroundColor="@color/primary_deep"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="32dp"
+                        android:paddingBottom="32dp"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp">
+
+                        <TextView
+                            android:id="@+id/txtScoreEmoji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌍"
+                            android:textSize="52sp" />
+
+                        <TextView
+                            android:id="@+id/txtScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 / 15"
+                            android:textSize="54sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/accent_yellow"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_marginTop="8dp" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="3dp"
+                            android:background="@color/primary_light"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp" />
+
+                        <TextView
+                            android:id="@+id/txtMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Good job!"
+                            android:textSize="15sp"
+                            android:textColor="@color/primary_pale"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.3" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Play Again -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/accent_orange"
+                    app:cardElevation="7dp">
+                    <Button
+                        android:id="@+id/btnPlayAgain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="🔄  Play Again"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:background="@drawable/btn_orange_ripple" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Leaderboard -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/primary_main"
+                    app:cardElevation="5dp">
+                    <Button
+                        android:id="@+id/btnLeaderboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="🏆  Leaderboard"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_teal_ripple" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Share -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/card_bg"
+                    app:cardElevation="4dp">
+                    <Button
+                        android:id="@+id/btnShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="📤  Share Score"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_white_ripple" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Home -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/card_bg"
+                    app:cardElevation="4dp">
+                    <Button
+                        android:id="@+id/btnHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="← Back to Home"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_white_ripple" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Confetti overlay -->
+    <FrameLayout
+        android:id="@+id/confettiContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
